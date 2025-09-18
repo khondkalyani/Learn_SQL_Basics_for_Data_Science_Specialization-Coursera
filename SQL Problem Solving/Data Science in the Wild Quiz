@@ -1,0 +1,68 @@
+1. A coworker just asked you “What percent of users ever order an item?” What are some likely reasons they might be asking for this data?
+ANS: To get a baseline before making a change.
+They would like to track this number over time to monitor for changes.
+They would like to compare the conversion rate in different geographical markets.
+
+Question 2
+You are investigating a drop! The drop is sudden. What are some examples of causes for a sudden drop? (Select all that apply).
+ANS: The data pipeline has an error and the data is stale.
+A holiday changed usage patterns suddenly.
+The website is broken and users are unable to engage normally.
+
+Question 3
+Select all that apply, the minimum set of columns you would need in a subtable or CTE to answer this question:
+What percent of all users have ever viewed an item?
+ANS: user_id
+has_viewed_item
+ 
+Question 4
+What were the names of the columns we decided we needed in this example?
+ANS: item_id, coorder_item_id, times_coordered, coordered_rank
+
+Question 5
+Why do you need a time-related column in your forecast dataset?
+ANS: To learn time-based trends and seasonality.
+
+Question 6
+Select all true statements about SQL below:
+ANS: This will enable you to calculate the percent of users who completed an order within 7 days of creating their user account.
+The left join used in LEFT JOIN first_add_to_cart Is necessary in order to show instances where the user did not add an item to the cart.
+
+Question 7
+What is the primary purpose of a scattter plot?
+ANS: Showing the relationship between two variables.
+ 
+Question 8
+What is the purpose of open-ended interview questions?
+ANS: To assess the creativity and adaptability of your approach.
+
+Question 9
+Select the minimum set of tables you’ll need to join to answer this question:
+What percent of all users have ever placed an order?
+ANS: orders
+users
+
+Question 10
+You are investigating a drop! The drop is gradual. What are some examples of causes for a gradual drop? (Select all that apply).
+ANS: The composition of user demographics is slowly changing, and the new population has a poorer performance in this metric.
+Your brand has been losing market share to your primary competitor over the last few quarters.
+
+Question 11
+What is the purpose of a 100% stacked bar chart?
+ANS: When you want to compare the relative proportions of components within categories.
+
+Question 12
+What is a primary objective of whiteboard coding interviews?
+ANS: Clear communication and structured thinking.
+
+Question 13
+What does the mix shift phenomenon describe?
+ANS: The performance of metrics remains steady within segments, but the underlying shift of composition causes the aggregate metric to change.
+
+Question 14
+In the example of a revenue growth line chart what should be included? (Select all that apply).
+ANS: Human readable axix labels.
+Descriptive titles and subtitles.
+
+
+
