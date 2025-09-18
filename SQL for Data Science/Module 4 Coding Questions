@@ -1,0 +1,61 @@
+Pull a list of customer ids with the customer’s full name, and address, along with combining their city and country together. Be sure to make a space in between these two and make it UPPER CASE. (e.g. LOS ANGELES USA)
+
+Select customerid, 
+FirstName || '('|| LastName ||')' as FullName,  address, Upper(city || ' ' || country ||'')
+From Customers
+
+What is the city and country result for CustomerID 16?
+
+ANS: MOUNTAIN VIEW USA
+
+Question 2
+Create a new employee user id by combining the first 4 letters of the employee’s first name with the first 2 letters of the employee’s last name. Make the new field lower case and pull each individual step to show your work.
+
+Select SUBSTR(FirstName, 1, 4) as FS, SUBSTR(LastName, 1, 2) as LS, Lower((substr(FirstName, 1, 4) || substr(LastName,1,2)))
+From Employees
+
+What is the final result for Robert King?
+ANS: robeki
+
+Question 3
+Show a list of employees who have worked for the company for 15 or more years using the current date function. Sort by lastname ascending.
+
+Select HireDate, FirstName, LastName, Date('Now')- HireDate as Years
+From Employees
+where Years >= 15 order by LastName asc
+
+What is the lastname of the last person on the list returned?
+ANS: Peacock
+
+Question 4
+Profiling the Customers table, answer the following question.
+
+select * 
+from Customers 
+where Company is null;
+
+Are there any columns with null values? Indicate any below. Select all that apply.
+ANS: Company, Phone, Postal Code, Fax
+
+Question 5
+Find the cities with the most customers and rank in descending order.
+
+select c.City, count(c.CustomerId) 
+from Customers c 
+group by c.City 
+order by count(c.CustomerId) DESC;
+
+Which of the following cities indicate having 2 customers?
+ANS: London, São Paulo, Mountain View
+
+Question 6
+Create a new customer invoice id by combining a customer’s invoice id with their first and last name while ordering your query in the following order: firstname, lastname, and invoiceID.
+
+Select c.FirstName || c.LastName || I.InvoiceId As newid
+From Customers c
+left join Invoices i on c.CustomerId = i.CustomerId 
+where newid like 'AstridGruber%' 
+order by c.FirstName, c.LastName, i.InvoiceId;
+
+Select all of the correct "AstridGruber" entries that are returned in your results below. Select all that apply.
+ANS: AstridGruber273, AstridGruber296, AstridGruber370
