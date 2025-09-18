@@ -1,0 +1,64 @@
+1. Which code blocks would help you check which dates have associated data 
+User
+*assuming you are working with a variant of SQL with the date() function, which returns the date as text in this format: YYYY-MM-DD.   
+ANS: SELECT 
+     date(created_timestamp) as created_date, 
+     COUNT(*) 
+     FROM users
+     GROUP BY created_date
+
+Question 2
+What will be the output of this query if the column is_admin contains true, false and null values?
+SELECT COALESCE(is_admin, false) 
+FROM users;
+ANS: All null values will be replaced with false.
+
+Question 3
+Which SQL tool helps facilitate pivot table style aggregations?
+ANS: GROUP BY
+
+Question 4
+What is missing? (Select all that apply).
+ANS: 
+Add in date filter
+WHERE dates.date >= “2025-01-01”
+AND dates.date <= “2025-01-07”
+
+Swap in a coalesce statement
+COALESCE(sample_data.count,0)
+
+Question 5
+What is one scenario where you might need to us
+ANS: When a column's value must be compared to an aggregate value.
+
+Question 6
+What makes SQL different from other programming languages, with respect to creating loops?
+ANS: SQL doesn’t use traditional loops like other programming languages but instead handles repetitive tasks by operating on entire sets of data at once.
+
+Question 7
+Which code blocks would help you determine the date range for the created_timestamp in the users table?
+*assuming you are working with a variant of SQL with the date() function, which returns the date as text in this format: YYYY-MM-DD.   
+ANS:  SELECT 
+      MIN(created_timestamp) AS min_date,
+      MAX(created_timestamp) AS max_date
+      FROM users
+
+8. What does the COALESCE function do?
+ANS: It replaces null values with something else.
+
+Question 9
+Which are the benefits of having access to a backbone table?  (Select all that apply).
+ANS: Improve query performance.
+Facilitate complex transformations.
+Provide an additional layer of database security.
+
+Question 10
+Which of the following queries will tell you which locale segments are present in the table called users?
+ANS: Either A or B
+ 
+
+
+
+
+
+
