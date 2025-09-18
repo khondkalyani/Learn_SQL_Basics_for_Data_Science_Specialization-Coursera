@@ -1,0 +1,66 @@
+Question 1
+Which of the following is a primary use of SQL in decision-making?
+ANS: Extracting and analyzing data to inform decisions.
+
+Question 2
+Why might a business choose to denormalize their data? (Select all that apply).
+ANS: To improve query performance on large datasets.
+To simplify data models for reporting.
+To improve the speed of data entry.
+
+Question 3
+What makes a good metric? (Select all that apply).
+ANS: A metric that filters out internal usage.
+A metric with an unambiguous name.
+A metric that is aligned with the goals and can't easily be gamed.
+
+Question 4
+You’ve been asked by a coworker to create a metric with rolling monthly orders. How many days would you look back to generate this number?
+ANS: There isn't one right answer.
+
+Question 5
+You’ve been asked to create a metric that looks at conversion from adding an item to cart to purchase.
+Which elements of a funnel have been specified in this request?
+ANS: Start Event
+Success Event
+
+Question 6
+You’ve been asked to calculate the percentage of users that place an order.
+Which elements that define a funnel have been specified in this request clearly enough to write code?
+ANS: Success Event
+.
+Question 7
+Following the example in the lesson, what is the right fraction or ratio to calculate period over period retention for the fifth period?
+PoP retention table.
+ANS: 2 out of 2
+
+Question 8
+Which of these comparisons are between randomized groups with a control? (Select all that apply).
+ANS: A randomized 50% of users landing on the login page will now see a new design. We compare them to the 50% of users who also saw the landing page but without the new design.
+We send an email to a randomly selected group of eligible users and we compare their outcomes to other users who were eligible but did not receive the email.
+
+Question 9
+Where can you start if you don't know how to start an exploratory analysis? (Select all that apply).
+ANS: Example several examples of the process.
+Generate a list of questions about the domain.
+
+Question 10
+Which if the following best describes LTV (Lifetime Value)?
+ANS: LTV refers to the total revenue a customer is expected to generate over their relationship with the business.
+
+Question 11
+What determines the number of business days in a given month? (Select all that apply).
+ANS: The number of weekdays in the month.
+The number of holidays observed on weekdays during the month.
+
+Question 12
+In which scenario is denormalized data most useful?
+ANS: For analysis on data requiring repetitive complex, multi-table joins.
+
+Question 13
+Following the example in the lesson, what happens when we add this line of code:
+ANS: We end up filtering out cases where there is no success event, because this clause requires first_login_success_time to be not null.
+
+Question 14
+What is a common use of SQL in modeling and forecasting?
+ANS: Generating data in a time series format.
