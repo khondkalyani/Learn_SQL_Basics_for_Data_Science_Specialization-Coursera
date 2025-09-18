@@ -1,0 +1,94 @@
+All of the questions in this quiz refer to the open source Chinook Database. Please familiarize yourself with the 
+ER diagram to familiarize yourself with the table and column names to write accurate queries and get the appropriate answers.
+
+Question 1
+Run Query: Find all the tracks that have a length of 5,000,000 milliseconds or more.
+
+SELECT milliseconds
+FROM Tracks
+Where milliseconds>= 5000000
+
+How many tracks are returned?
+ANS: 2
+
+Question 2
+Run Query: Find all the invoices whose total is between $5 and $15 dollars.
+
+Select total
+From invoices
+where total Between '5' And '15'
+
+While the query in this example is limited to 10 records, running the query correctly will indicate how many total records there are - enter that number below.
+ANS: 168
+
+Question 3
+Run Query: Find all the customers from the following States: RJ, DF, AB, BC, CA, WA, NY.
+
+Select State, FirstName, LastName, Company
+From Customers
+where State in ('RJ', 'DF', 'AB', 'BC', 'CA','WA','NY')
+
+What company does Jack Smith work for?
+ANS: Microsoft Corp
+
+Question 4
+Run Query: Find all the invoices for customer 56 and 58 where the total was between $1.00 and $5.00.
+
+Select *
+From Invoices
+Where (CustomerId In (56,58) ) And (total between '1.00' and '5.00')
+What was the invoice date for invoice ID 315?
+ANS: 10-27-2012
+
+Question 5
+Run Query: Find all the tracks whose name starts with 'All'.
+
+Select *
+From Tracks
+Where name Like 'All%'
+
+While only 10 records are shown, the query will indicate how many total records there are for this query - enter that number below.
+ANS : 15
+
+Question 6
+Run Query: Find all the customer emails that start with "J" and are from gmail.com.
+
+Select *
+From Customers
+Where (email Like 'J%') and (email Like '%gmail.com')
+
+Enter the one email address returned (you will likely need to scroll to the right) below.
+ANS: jubarnett@gmail.com
+
+Question 7
+Run Query: Find all the invoices from the billing city Brasília, Edmonton, and Vancouver and sort in descending order by invoice ID.
+
+Select *
+From Invoices
+Where (BillingCity in ('Brasília', 'Edmonton', 'Vancouver'))
+Order By InvoiceId DESC;
+
+What is the total invoice amount of the first record returned? Enter the number below without a $ sign. Remember to sort in descending order to get the correct answer.
+ANS: 13.86
+
+Question 8
+Run Query: Show the number of orders placed by each customer (hint: this is found in the invoices table) and sort the result by the number of orders in descending order.
+
+select CustomerId , COUNT(InvoiceId) 
+from Invoices 
+group by CustomerId 
+order by COUNT(InvoiceId) DESC
+
+What is the number of items placed for the 8th person on this list? Enter that number below.
+ANS: 7
+
+Question 9
+Run Query: Find the albums with 12 or more tracks.
+
+Select * 
+from Tracks 
+group by AlbumId 
+having COUNT(DISTINCT TrackId) >= 12;
+
+While the number of records returned is limited to 10, the query, if run correctly, will indicate how many total records there are. Enter that number below.
+ANS: 158
