@@ -1,0 +1,66 @@
+
+Question 1
+Which are examples of external data?
+ANS: Competitor's Price Data
+Widget Market Trend Reports
+
+Question 2
+When transitioning from one SQL dialect to another, what is most likely to require adjustment due to differences in SQL implementations?
+ANS: The exact error message for common errors.
+
+Question 3
+Which is the correct syntax for extracting item_id from the event_properties column in the events table?
+ANS: It depends on the SQL dialect.
+
+Question 4
+Which field is essential in a field history table to link it to the original record?
+ANS: The record id
+
+Question 5
+In the context of a data pipeline when is SQL typically used?
+ANS: For transforming the data.
+
+Question 6
+What is a benefit of applying the DRY principle to data transformation logic in a data pipeline?
+ANS: It reduces the potential for errors and inconsistencies.
+
+Question 7
+You’ve written a query to calculate the number of orders that have been placed each month. It is only half way through the month, and when you re-run the number from last week, the number hasn’t changed. 
+What is the most likely reason, and the best follow up?
+ANS: Ask if the data pipeline might not have updated, and check to see if the data is being refreshed regularly.
+
+Question 8
+Why might a business opt for a dedicated infrastructure to run SQL queries instead of using their production environment such as one needed to run a website? (Select all that apply).
+ANS: They need to join data from multiple sources.
+They don't want to impact the performance of the production environment.
+
+Question 9
+What is true about our events data?
+Hint: you will need to be familiar with the data in the table to answer this question.
+ANS: The session id parameter can be used to track a user through the login process.
+
+Question 10
+What is the primary benefit of using a field history table?
+ANS: To keep the table of records simple while maintaining the ability to track changes.
+
+Question 11
+When we say that the filtered users table is downstream of the users table what do we mean?
+ANS: The logic to create or update the filtered users table depends on the users table being updated and correct.
+
+Question 12
+Continuous or frequent testing in data projects ensures _____________.
+ANS: earlier detections of errors and issues.
+
+Question 13
+You’ve just written a query to calculate the average order price each month and you find something unexpected! Last month has an average that is nearly 10 times higher that expected. This is alarming because you expect you might be asked for this regularly.
+You look at some of the orders and you find some uncanny orders, including a test order for $1,000,000. What is the most appropriate action to take?
+ANS:  Check to see how test usage is being filtered out of your query. If needed, update the logic to exclude test usage.
+
+Question 14
+Which are good reasons to use JSON in a table? 
+ANS: JSON is useful when you need flexible data structure because you can introduce new structure without changing the schema.
+
+Question 15
+Why might a business opt to build a transformation layer on top of its data warehouse?
+ANS: They want to automate complicated business logic.
+They need to join data from multiple sources.
