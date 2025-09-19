@@ -1,0 +1,39 @@
+Prompt
+Input your answers for milestone 2, directly into the space provided.
+
+To start look into Olympic Data, I explored some basics statistics and visualization. 
+First, I created a pie chart that gives us distribution of athlete ages which shows that highest number of participants fall in 18-30 age 
+group and lowest number of participants fall in age group of greater than 40 years. 
+Then, I plotted number of male and female participants per year from 1896 to 2016. This showed that in the early years there were almost no 
+female participants who came to rise from about 1912-1920 and in the years from 1996 to onwards we can see there are almost equal number of 
+male and participants per year.
+I also checked total number of medals by different countries in past 120 years and it showed that United States is leading by a big margin
+which is more than 5000 medals. 
+
+Following are some key points about the data:
+In the entire history of 120 years of Olympics highest number of medalists count is in the sport Athletics followed by Swimming, Rowing, 
+Gymnastics and more.
+The Olympic Data give the range of age of participants where minimum age is 10 years and maximum age is 97 years.
+Then,  I find out top 15 teams by number of years of participation in Olympics in last 120 years. The Olympics were held 35 times during 
+this period, and countries like the  United States, Switzerland, Italy, Greece and others where some top teams participated total 35 years 
+while some participated 34 years and so on.
+The 10 years old player from the team Ethnikos Gymnastikos Syllogos  participated in Gymnastics and the 97 years old player from the team 
+United States participated in Arts Competitions.
+I also found number of participants from different teams in 120 years where highest number of players are from Unites States which are more 
+than 9000, after that Germany had more than 7000 players played in 120 years followed by some teams UK, France, Russia and others. 
+As, US had highest number of players in 120 years I looked into the gender of participants and it showed that in some years like 1896, 
+1904 there were no female participants from US team. From 1920 only 14 females whereas 274 males were participated, after that number of
+female players increased and in 2016 they had 285 females and 259 males players.
+Yes, I disapproved the initial hypothesis,  'The ratio of female to male participants in the Olympics has steadily increased over time.',  
+for the question,  'How has the ratio of male and female participants changed over the years?' 
+I plotted the histogram of male and female participants per year form 1896-2016 and the histogram showed how the female participants 
+increases  over the years. So, the male-to-female athlete ratio decreases generally over the years. More females are partaking in the
+Olympics, year-on-year. Hence the hypothesis is disproved and next I want to look at other questions to prove or disprove the assumptions.
+
+Some additional questions I want to look at:
+Do all countries participate equally across different Olympic sports? 
+Hypothesis: There is an association between a country and the type of sport its athletes participate in. 
+
+Is there an association between participants  gender and the type of sport they participate in?
+Hypothesis: There is association between gender of participants and sport the participate in. (Sports choice depends on gender)
+
