@@ -1,0 +1,38 @@
+Prompt
+In the space provided, submit your answers.
+
+Relationships / Correlation, Pearson Correlation
+
+Firstly, I computed Pearson correlation between Year and Female share of participants over 120 years to look at the trend of female 
+participants. The Pearson Correlation of 0.961 shows a very strong positive relationship between Years and Female participation ratio, which 
+indicates steady growth in women's involvement. 
+I also computed Pearson Correlation between age of participant and his/her performance (i.e. Medal won) and it showed almost no linear r
+elationship between athlete's age and the medal they win but age does influence performance in certain sports. 
+
+Linear  Regression
+The correlation between year and female participation ratio was very strong and positive (r ≈ 0.97).The regression slope shows that female 
+participation has steadily increased over time, meaning more women are competing in recent Olympics compared to earlier ones. 
+As years progress, the share of female athletes keeps rising, showing a clear trend toward gender balance in the Olympics.
+
+TF-IDF highlights the most distinctive words for each sport by giving higher weight to terms that appear often in one sport but less across
+others. For example, archery is linked with words like target, round, team, while art competitions show painting, sculpture, architecture. 
+This helps us quickly identify the unique language and themes that define each sport/event. 
+
+I have initially missed to look for some points like to check if there is any association between the gender of participants and sports 
+they choose to play. To dive deeper into it I calculated Chi-Square Statistics and the statistics suggests significant association between
+gender and sport i.e.  male and female athletes do not participate equally across all sports.  
+Looking beyond, this result suggests: Cultural and biological factors may influence the distribution of genders across sports.
+
+Now, I want to look at some other things  like to check association between height of participants and sports they play also to check whether
+all teams equally participate in each sport or not etc. with certain statistics and to observe the result  for better conclusion. 
+With the help of descriptive statistics like chi-square test of fitness and independence, Pearson correlation and with some visuals or 
+graphs we can find the result and interpret with it.
+
+New Metric: Gender-Sport Participation Index (GSPI) 
+This new metric helps to identify participation of female in each sport regardless of total number of participants in each sport. 
+By calculating is showed some sports have almost equal participation of bit male and female players while some sports are dominated by only 
+one gender(mostly male). Sports like Table Tennis, Badminton etc. have equal male female participants while some sports like  Water Polo,  
+Weightlifting have almost no female participants as compared to male.  
+
+New Metric:  Age-Performance Efficiency (APE)  
+Measures how effective athletes in each age range are at winning medals. Helps test if younger or older athletes perform better across sports.
